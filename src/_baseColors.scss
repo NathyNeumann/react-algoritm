@@ -1,0 +1,43 @@
+$backColor: #1d1d1d;
+$textColor: rgb(204, 204, 204 );
+
+$cardColorsBg :(
+    0:rgb(127, 225, 14),
+    1: #8e61e8,
+    2:rgb(200, 161, 95),
+    3: hsl(315, 86%, 73%),
+    4: rgb(21, 176, 237), 
+    5: rgb(135, 48, 48)
+);
+
+.flex{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.inputText{
+    width:95%;
+    height: 20px;
+    &:hover{
+        cursor: pointer;
+        background-color: #bbb9b9;
+    }
+}
+
+@mixin box-shadow($color) {
+    box-shadow: 4px 4px 5px -2px rgba($color, 0.6);
+}
+
+@mixin text-effect($val){
+    @if $val == danger {
+        font-weight: bold;
+        color: red;
+    }
+    @else if $val == alert {
+        color: yellow;
+    }
+    @else {
+        color: #fff;
+    }
+
+}

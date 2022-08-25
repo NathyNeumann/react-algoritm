@@ -1,0 +1,13 @@
+@import 'baseColors';
+
+root{
+  font-size: 62.5%;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+  }
+   body{
+     background-color: $backColor;
+   }
